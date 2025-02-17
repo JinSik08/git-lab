@@ -9,7 +9,7 @@
 // 1. Escribe una función llamada firstNonRepeating que encuentre el primer carácter de un cadena de texto que no se repite.
 // Prueba tu función con: 'abacddbec'
 
-function firstNonRepeating(str){ // Recibe el string
+export function firstNonRepeating(str){ // Recibe el string
     let no_repite = ''; // Inicializa la variable no_repite con 'let'
     for(let i = 0; i < str.length; i++){ // Inicia un ciclo for para recorrer el string
         let char = str[i]; // Inicializa la variable char con el caracter en la posición i del string
@@ -28,7 +28,7 @@ console.log(firstNonRepeating('abacddbec')); // Imprime el resultado de la funci
 
 // 2. Escribe una función llamada bubbleSort que implemente el algoritmo 'bubble-sort' para ordenar una lista de números.
 
-function bubbleSort(nums){ // Recibe el arreglo con números
+export function bubbleSort(nums){ // Recibe el arreglo con números
     for(let i = 0; i < nums.length; i++){ // Inicia un ciclo for para recorrer el arreglo
         for(let j = 0; j < nums.length - i - 1; j++){ // Inicia un ciclo for para recorrer el arreglo
             // Si el elemento en la posición j es mayor al elemento en la posición j + 1
@@ -50,7 +50,7 @@ console.log(bubbleSort([54,8,12,92,17,82,35]).join(', ')); // Imprime el resulta
 // con el resultado la segunda, con nombre invertArrayInplace, que modifique el mismo arreglo que se pasa como argumento.
 // No se permite usar la función integrada 'reverse'.
 
-function invertArray(nums){ // Recibe el arreglo con números
+export function invertArray(nums){ // Recibe el arreglo con números
     let reverso = []; // Inicializa la variable reverso con 'let'
     for(let i = nums.length - 1; i >= 0; i--){ // Inicia un ciclo for para recorrer el arreglo
         reverso.push(nums[i]); // Agrega el elemento en la posición i al arreglo result
@@ -58,7 +58,7 @@ function invertArray(nums){ // Recibe el arreglo con números
     return reverso; // Regresa el arreglo invertido
 }
 
-function invertArrayInplace(nums){ // Recibe el arreglo con números
+export function invertArrayInplace(nums){ // Recibe el arreglo con números
     for(let i = 0; i < nums.length / 2; i++){ // Inicia un ciclo for para recorrer la mitad del arreglo
         let temp = nums[i]; // Inicializa la variable temp con el elemento en la posición i
         nums[i] = nums[nums.length - 1 - i]; // El elemento en la posición i es igual al elemento en la posición nums.length - 1 - i
@@ -75,7 +75,7 @@ console.log(invertArrayInplace([23,32,23,65,27,98]).join(', ')); // Imprime el r
 // 4. Escribe una función llamada capitalize que reciba una cadena de texto y regrese una nueva con la primer letra
 // de cada palabra en mayúscula.
 
-function capitalize(string){ // Recibe el string
+export function capitalize(string){ // Recibe el string
     let capital = string.split(' '); // Inicializa la variable capital con el string dividido por espacios
     for(let i = 0; i < capital.length; i++){ // Inicia un ciclo for para recorrer el arreglo capital
         capital[i] = capital[i][0].toUpperCase() + capital[i].slice(1); // La primer letra de cada palabra en mayúscula
@@ -89,7 +89,7 @@ console.log(capitalize('blue archive')); // Imprime el resultado de la función
 
 // 5. Escribe una función llamada mcd que calcule el máximo común divisor de dos números.
 
-function mcd(x,y){ // Recibe dos números
+export function mcd(x,y){ // Recibe dos números
     while(y){ // Mientras 'y' sea verdadero (hasta que no sea cero)
         let t = y; // Inicializa la variable 't' con 'y'
         y = x % y; // 'y' es igual al residuo de x/y
@@ -107,7 +107,7 @@ console.log(mcd(4,5)); // Imprime el resultado de la función
 // Referencia de HackerSpeak:
 // https://gist.github.com/akey7/5abcc62edad715a0a3a42e1616e3a138
 
-function hackerSpeak(string){ // Recibe el string
+export function hackerSpeak(string){ // Recibe el string
     // Inicializa la función hacker con el string y el objeto replace con las letras a cambiar y sus valores
     let hacker = (origen, replace = {'a':'4','e':'3','i':'1','o':'0'}) => (
         // Divide el string y lo mapea con las letras a cambiar y las cambiadas, si no se encuentra la letra, se deja igual
@@ -123,7 +123,7 @@ console.log(hackerSpeak('tecnológico de monterrey')) // Imprime el resultado de
 // 7. Escribe una función llamada factorize que reciba un número, y regrese una lista con todos sus factores. Por ejemplo:
 // factorize(12) -> [1, 2, 3, 4, 6, 12].
 
-function factorize(num){ // Recibe el número
+export function factorize(num){ // Recibe el número
     let factors = []; // Crea el arreglo como variable factores con 'let'
     for(let i = 1; i <= num; i++){ // Inicia un ciclo for para recorrer los números hasta num
         if(num % i == 0){ // Si num es divisible entre i (residuo 0)
@@ -143,7 +143,7 @@ console.log(factorize(12).join(', ')); // Imprime el resultado de la función
 // Referencia de Set y ...:
 // https://stackoverflow.com/questions/20069828/how-to-convert-set-to-array
 
-function deduplicate(list){ // Recibe el arreglo con números
+export function deduplicate(list){ // Recibe el arreglo con números
     // Inicializa la variable no_dupli con los elementos únicos del arreglo list con 'let' y 'Set' 
     // para eliminar duplicados y '...' para expandir el arreglo en uno nuevo
     let no_dupli = [...new Set(list)];
@@ -157,7 +157,7 @@ console.log(deduplicate([1, 0, 1, 1, 0, 0]).join(', ')); // Imprime el resultado
 // 9. Escribe una función llamada findShortestString que reciba como parámetro una lista de cadenas de texto,
 // y regrese la longitud de la cadena más corta.
 
-function findShortestString(string){ // Recibe el arreglo con strings
+export function findShortestString(string){ // Recibe el arreglo con strings
     // Inicializa la variable corto con la longitud de la cadena más corta del arreglo strings con 'let' y 'Math.min'
     let corto = Math.min(...string.map((str) => str.length));
     return corto; // Regresa la longitud de la cadena más corta
@@ -171,7 +171,7 @@ console.log(findShortestString(['jin','montaña','impacto'])); // Imprime el res
 // Referencia de expresión regular de .replace:
 // https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/replace
 
-function isPalindrome(string){ // Recibe el string
+export function isPalindrome(string){ // Recibe el string
     // Inicializa la variable palindromo con el string en minúsculas y sin espacios con 'let' y 'replace'
     let palindromo = string.toLowerCase().replace(/ /g, '');
     let reverso = palindromo.split('').reverse().join(''); // Inicializa la variable reverso con el string invertido sin espacios
@@ -185,7 +185,7 @@ console.log(isPalindrome('Anita lava la tina')); // Imprime el resultado de la f
 // 11. Escribe una función llamada sortStrings que tome una lista de cadena de textos y devuelva una nueva lista
 // con todas las cadenas en orden alfabético.
 
-function sortStrings(arreglo){ // Recibe el arreglo con strings
+export function sortStrings(arreglo){ // Recibe el arreglo con strings
     // Inicializa la variable orden con el arreglo ordenado alfabéticamente con 'let' y 'sort'
     let orden = arreglo.sort(); // .sort ordena alfabéticamente el arreglo
     return orden; // Regresa el arreglo ordenado
@@ -199,7 +199,7 @@ console.log(sortStrings(['mundo','boliche','xilofono']).join(', ')); // Imprime 
 // la mediana y la moda. Por ejemplo:
 // stats([8, 4, 2, 6, 8, 13, 17, 2, 4, 8]) -> [ 7.2, 8 ]
 
-function stats(nums){ // Recibe el arreglo con números
+export function stats(nums){ // Recibe el arreglo con números
     nums.sort((a, b) => a - b); // (a - b) garantiza que los números se ordenen correctamente de menor a mayor
     let mitad = nums.length / 2; // Calcula la posición central de la lista
     // Calcula la mediana dependiendo si la lista tiene un número par o impar
@@ -224,7 +224,7 @@ console.log(stats([8, 4, 6, 8, 13, 17, 2, 4, 8])); // Imprime el resultado de la
 
 // 13. Escribe una función llamada popularString que tome una lista de cadenas de texto y devuelva la cadena más frecuente.
 
-function popularString(strings){ // Recibe el arreglo con strings
+export function popularString(strings){ // Recibe el arreglo con strings
     let frecuencia = {}; // Inicializa la variable frecuencia con un objeto vacío
     let maxFrecuencia = 0; // Inicializa la variable maxFrecuencia con para calcular la alta frecuencia
     let pop = strings[0]; // Inicializa la variable pop con el primer string del arreglo
@@ -247,7 +247,7 @@ console.log(popularString(['buenos dias','buenas tardes','buenas noches','buenas
 // 14. Escribe una función llamada isPowerOf2 que tome un número y devuelva verdadero
 // si es una potencia de dos, falso de lo contrario.
 
-function isPowerOf2(numero){ // Recibe el número
+export function isPowerOf2(numero){ // Recibe el número
     if (numero == 0 || numero == 1) return true; // Si el número es 0 o 1, regresa verdadero
     else if (numero < 0) return false; // Si el número es negativo, regresa falso
     // El operador & compara los bits del número con los bits de (numero - 1) y regresa verdadero si son iguales
@@ -262,7 +262,7 @@ console.log(isPowerOf2(32)); // Imprime el resultado de la función
 // 15. Escribe una función llamada sortDescending que tome una lista de números y devuelva una nueva lista
 // con todos los números en orden descendente.
 
-function sortDescending(nums){ // Recibe el arreglo con números
+export function sortDescending(nums){ // Recibe el arreglo con números
     let descendente = nums.sort((a, b) => b - a); // (b - a) garantiza que los números se ordenen correctamente de mayor a menor
     return descendente; // Regresa el arreglo ordenado de mayor a menor
 }
