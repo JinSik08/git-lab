@@ -9,10 +9,26 @@
     <h1>Flujo de trabajo de git y github</h1>
     <p><strong>Git y GitHub se utilizan para el control de versiones y la colaboración en proyectos de software.</strong></p>
     <h2><u>Características del git y github</u></h2>
+    <h3><strong>Git</strong></h3>
+    <p>Git es un sistema de control de versiones distribuido.
+        Esto significa que permite a los desarrolladores rastrear cambios en el código,
+        colaborar con otros y revertir modificaciones si es necesario.</p>
+    <h4>Funciones principales:</h4>
     <ol>
-        <li>Git es un sistema de control de versiones distribuido que permite a los desarrolladores colaborar en proyectos de software.</li>
-        <li>GitHub es una plataforma en la nube que permite a los desarrolladores alojar y compartir sus proyectos de software.</li>
-        <li>Git y GitHub se utilizan juntos para facilitar la colaboración en proyectos de software.</li>
+        <li>Control de versiones: Puedes volver a versiones anteriores del código si algo sale mal.</li>
+        <li>Trabajo en paralelo: Varios desarrolladores pueden trabajar en el mismo proyecto sin sobrescribirse.</li>
+        <li>Branching y merging: Puedes crear "ramas" de desarrollo separadas y luego unirlas al código principal.</li>
+        <li>Distribuido: Cada persona que clona un repositorio tiene una copia completa del historial del proyecto.</li>
+    </ol>
+    <h3><strong>GitHub</strong></h3>
+    <p>GitHub es una plataforma en la nube que permite alojar repositorios Git,
+        facilitando la colaboración y gestión de código en equipo.</p>
+    <h4>Funciones principales:</h4>
+    <ol>
+        <li>Repositorio remoto: Guarda tu código en la nube y accede desde cualquier lugar.</li>
+        <li>Colaboración: Puedes trabajar con otros mediante pull requests y code reviews.</li>
+        <li>Automatización: Con GitHub Actions, puedes automatizar tareas como pruebas y despliegue.</li>
+        <li>Gestión de proyectos: Usa issues y proyectos para organizar tareas y errores.</li>
     </ol>
     <h2>Códigos que puede usar:</h2>
     <table border="1">
@@ -21,39 +37,33 @@
             <th>Código</th>
             <th>Definición</th>
         </tr>
-        <tr>
             <td><em>git clone "url de SSH"</url></em></td>
             <td>Hacer el clone del repositorio</td>
         </tr>
-        <tr>
             <td><em>git status</url></em></td>
             <td>Revisar el estatus del archivo</td>
         </tr>
-        <tr>
             <td><em>git add</url></em></td>
             <td>Agregar los cambios al staging area</td>
         </tr>
-        <tr>
             <td><em>git commit -m "Mensaje describiendo los cambios"</url></em></td>
             <td>Confirmar los cambios en el historial de Git</td>
         </tr>
-        <tr>
             <td><em>git push origin "nombre de rama"</url></em></td>
             <td>Enviar los cambios al repositorio remoto en GitHub</td>
         </tr>
-        <tr>
+            <td><em>git pull origin "nombre de rama"</url></em></td>
+            <td>Actualizar el código desde GitHub</td>
+        </tr>
             <td><em>git fetch</url></em></td>
             <td>Descargar los cambios sin fusionarlos automáticamente</td>
         </tr>
-        <tr>
             <td><em>git branch</url></em></td>
             <td>Listar las ramas existentes</td>
         </tr>
-        <tr>
             <td><em>git checkout "nombre de rama"</url></em></td>
             <td>Cambiar de rama</td>
         </tr>
-        <tr>
             <td><em>git merge "nombre de rama a fusionar"</url></em></td>
             <td>Fusionar una rama con otra</td>
         </tr>
