@@ -1,0 +1,55 @@
+*{
+    background-color: lightpink;
+}
+
+h1{
+    color: #960707;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: red 3px dotted;
+    border-left: 10px;
+    border-right: 10px;
+    border-radius: 100px;
+    padding: 15px;
+    margin: 10px;
+    background-image: url('https://st2.depositphotos.com/2398521/46497/i/450/depositphotos_464975588-stock-photo-dog-shiba-inu-full-length.jpg');
+    background-size: 50px;
+    background-position: center -130px;
+}
+
+h2{
+    color: #FF5454;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+img{
+    float: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 400px;
+    height: 550px;
+    overflow: auto;
+}
+
+p{
+    color: #BB7C77;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+ul{
+    list-style: circle inside;
+}
+
+a{
+    color: lightgoldenrodyellow;
+}
+
+footer p{
+    font-family: Times New Roman;
+    font-size: 25px;
+}
