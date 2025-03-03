@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/blog_css.css">
+    <title> CSS </title>
+    <style>
+        td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descripción de CSS</h1>
+    <p><strong>CSS (Cascading Style Sheets) es un lenguaje de diseño utilizado para controlar
+        la apariencia y el formato de un documento HTML.</strong></p>
+    <p><strong>Con CSS, podemos modificar aspectos visuales como colores, fuentes,
+        tamaños, márgenes, espaciados y posicionamiento de los elementos en una página.</strong></p>
+    <h2><u>Selectores, propiedades y valores en CSS</u></h2>
+    <p>CSS trabaja mediante <em>reglas de estilo</em>, que se componen de selectores, propiedades y valores.</p>
+    <ul>
+        <li><strong>Selector:</strong> Define a qué elementos se aplicará el estilo.</li>
+        <li><strong>Propiedad:</strong> Especifica la característica que se va a modificar.</li>
+        <li><strong>Valor:</strong> Indica el ajuste o configuración de la propiedad.</li>
+    </ul>
+    <h4><u>Ejemplo de la regla:</u></h4>
+    <div><pre><code>
+    p {
+        color: blue;
+        font-size: 18px;
+        text-align: center;
+    }
+    </code></pre></div>
+    <p>En este caso,</p>
+    <li><strong>p</strong>, es el selector que aplica a todos los párrafos,</li>
+    <li><strong>color, font-size y text-align</strong>, son las propiedades y</li>
+    <li><strong>blue, 18px y center</strong>, son los valores.</li>
+    <h4><u>Tipos de selectores:</u></h4>
+    <strong><ol>
+        <li><em>Selector por tipo o etiqueta</em></li>
+    </ol></strong>
+    <p>Esto selecciona todas las etiquetas de mismo tipo específico.</p>
+    <p>Por ejemplo:</p>
+    <div><pre><code>
+    p {
+        width: 300px;
+        padding: 20px;
+        background-color: lightblue;
+    }
+    </code></pre></div>
+    <p>Sirve para aplicar estilos a todos los párrafos <em>p</em>.</p>
+    <strong><ol start="2">
+        <li>Selector por clase (.)</li>
+    </ol></strong>
+    <p>Esto selecciona solamente los elementos que tiene la clase específica.</p>
+    <p>Por ejemplo:</p>
+    <div><pre><code>
+    .ejemplo {
+        height: 200px;
+        background-color: green;
+        font-weight: bold;
+    }
+    </code></pre></div>
+    <p>Sirve para aplicar estilos a solamente a los elementos que tiene la clase <em>ejemplo</em>.</p>
+    <strong><ol start="3">
+        <li>Selector por identificador (#)</li>
+    </ol></strong>
+    <p>Esto selecciona únicamente el elemento que tiene el id específico.</p>
+    <p>Por ejemplo:</p>
+    <div><pre><code>
+    #title {
+        font-size: 22px;
+        color: lightgrey;
+        text-align: right;
+    }
+    </code></pre></div>
+    <p>Sirve para aplicar estilos a únicamente al elemento que tiene el id.</p>
+    <h4>Si resumimos:</h4>
+    <table border="1">
+        <caption>Diferencias entre Selectores por Tipo, Clase e Identificador</caption>
+        <tr>
+            <th><center>Selector</center></th>
+            <th>Símbolo</th>
+            <th>Donde se aplica</th>
+        </tr>
+            <td>Tipo</th>
+            <td>Nombre de etiqueta</th>
+            <td>Todos los elementos de ese tipo como párrafos, body, etc.</th>
+        </tr>
+            <td>Clase</th>
+            <td>.Nombre</th>
+            <td>Todos los elementos con esa clase.</th>
+        </tr>
+            <td>Identificador</th>
+            <td>#Nombre</th>
+            <td>Un solo elemento único en la página.</th>
+        </tr>
+    </table>
+    <br><a href="blog_jin.html">Regresar a la página original</a></br>
+</body>
+</html>
