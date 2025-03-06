@@ -1,0 +1,93 @@
+html{
+    margin: -10px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}
+
+header a{
+    color: white;
+}
+
+header nav{
+    display: flex;
+    margin: 18.72px;
+}
+
+header nav a{
+    display: flex;
+    padding-left: 10px;
+}
+
+#subscribeSection{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#subscribeSection button{
+    background-color: orange;
+    color: white;
+}
+
+#subscribeSection form{
+    margin: 16px;
+}
+
+#imageSection {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#imageSection div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+#imageSection img{
+    width: 100px;
+    height: 100px;
+}
+
+#imageSection p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#topic{
+    background-color: orange;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+#topic h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: grey;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+}
